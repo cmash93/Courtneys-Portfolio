@@ -31,16 +31,16 @@ h2 {
 header,
 footer {
     background-color: darkgrey;
-    
     display: flex;
     justify-content: center;
 }
 
 /* Header and Navigation Bar Section*/
 header {
-    position: relative;
+    position: sticky;
     display: flex;
     justify-content: space-between;
+    top: 0;
 }
 
 header h1.page-title {
@@ -57,16 +57,18 @@ li {
 }
 
 a{
-
+    text-decoration: none;
 }
 
-main {
-    background-color: plum;
+p {
+    font-size: 1.6rem;
 }
+
 
 /* Page One, Home Section */
 .page-one {
     background-color: cadetblue;
+    margin-top: 2rem;
 }
 
 #home {
@@ -81,6 +83,7 @@ main {
 /* Page Two, About Section */
 .page-two {
     background-color: aquamarine;
+    margin-top: 2rem;
 }
 
 #about {
@@ -95,6 +98,7 @@ main {
 /* Page Three, Portfolio Section */
 .page-three {
     background-color: lightgreen;
+    margin-top: 2rem;
 }
 
 #portfolio {
@@ -109,6 +113,7 @@ main {
 /* Page Four, Contact Section */
 .page-four {
     background-color: palevioletred;
+    margin-top: 2rem;
 }
 
 #contact {
@@ -122,6 +127,7 @@ main {
 /* Footer Section */
 footer {
     font-size: 2rem;
+    margin-top: 2rem;
 }
 
 /* Media Queries Section */
