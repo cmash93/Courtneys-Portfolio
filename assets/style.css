@@ -7,6 +7,7 @@ html {
 }
 
 body {
+    background-color: blueviolet;
 
 }
 
@@ -26,6 +27,7 @@ h2 {
 /* Properties applied to the Header and Footer */
 header,
 footer {
+    background-color: darkgrey;
 
 }
 
@@ -51,11 +53,13 @@ a{
 }
 
 main {
+    background-color: plum;
 
 }
 
 /* Page One, Home Section */
 .page-one {
+    background-color: cadetblue;
 
 }
 
@@ -70,6 +74,7 @@ main {
 
 /* Page Two, About Section */
 .page-two {
+    background-color: aquamarine;
 
 }
 
@@ -84,7 +89,7 @@ main {
 
 /* Page Three, Portfolio Section */
 .page-three {
-
+    background-color: lightgreen;
 }
 
 #portfolio {
@@ -98,6 +103,7 @@ main {
 
 /* Page Four, Contact Section */
 .page-four {
+    background-color: palevioletred;
 
 }
 
