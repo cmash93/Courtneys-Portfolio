@@ -10,8 +10,13 @@ html {
 }
 
 body {
+    background-image: url(../assets/images/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-color: blueviolet;
     width: 80%;
+    height: fit-content;
 }
 
 h1 {
@@ -26,6 +31,7 @@ h1,
 h2 {
     
 }
+
 
 /* Properties applied to the Header and Footer */
 header,
@@ -128,6 +134,7 @@ p {
 footer {
     font-size: 2rem;
     margin-top: 2rem;
+    bottom: 0;
 }
 
 /* Media Queries Section */
