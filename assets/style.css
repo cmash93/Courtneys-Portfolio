@@ -2,38 +2,45 @@
 
 }
 
+/* Font size set to 10px. 1rem will equal 10px. */
 html {
-
+    font-size: 62.5%;
+    display: flex;
+    justify-content: center;
 }
 
 body {
     background-color: blueviolet;
-
+    width: 80%;
 }
 
 h1 {
-
+    font-size: 4rem;
 }
 
 h2 {
-
+    font-size: 3rem;
 }
 
 h1,
 h2 {
-
+    
 }
 
 /* Properties applied to the Header and Footer */
 header,
 footer {
     background-color: darkgrey;
-
+    
+    display: flex;
+    justify-content: center;
 }
 
 /* Header and Navigation Bar Section*/
 header {
-
+    position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 
 header h1.page-title {
@@ -45,7 +52,8 @@ header nav {
 }
 
 li {
-
+    display: inline-block;
+    text-decoration: none;
 }
 
 a{
@@ -54,13 +62,11 @@ a{
 
 main {
     background-color: plum;
-
 }
 
 /* Page One, Home Section */
 .page-one {
     background-color: cadetblue;
-
 }
 
 #home {
@@ -75,7 +81,6 @@ main {
 /* Page Two, About Section */
 .page-two {
     background-color: aquamarine;
-
 }
 
 #about {
@@ -104,7 +109,6 @@ main {
 /* Page Four, Contact Section */
 .page-four {
     background-color: palevioletred;
-
 }
 
 #contact {
@@ -117,7 +121,7 @@ main {
 
 /* Footer Section */
 footer {
-
+    font-size: 2rem;
 }
 
 /* Media Queries Section */
