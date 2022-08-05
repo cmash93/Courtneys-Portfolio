@@ -1,5 +1,5 @@
 :root {
-
+    --light: #fff;
 }
 
 /* Font size set to 10px. 1rem will equal 10px. */
@@ -7,6 +7,12 @@ html {
     font-size: 62.5%;
     display: flex;
     justify-content: center;
+}
+
+.wrapper {
+    position: relative;
+    height: 100%;
+    min-height: 100%;
 }
 
 body {
@@ -34,47 +40,65 @@ h2 {
 
 
 /* Properties applied to the Header and Footer */
-header,
+nav,
 footer {
-    background-color: darkgrey;
+    background-color: var(--light);
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 /* Header and Navigation Bar Section*/
-header {
+nav {
     position: sticky;
     display: flex;
     justify-content: space-between;
     top: 0;
+    border-radius: .5rem;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
-header h1.page-title {
-
+/* This allows me to change the color based on hover and what page we are on */
+nav:hover li a {
+    opacity: 0.5; 
 }
-
-header nav {
-
+nav:hover li a:hover {
+      opacity: 1; 
+    
 }
 
 li {
     display: inline-block;
+    margin: 1rem;
     text-decoration: none;
 }
 
 a{
+    font-size: 1.6rem;
     text-decoration: none;
+    transition: .3s ease;
 }
 
 p {
     font-size: 1.6rem;
 }
 
+img {
+    height: 5rem;
+    width: 5rem;
+}
+
 
 /* Page One, Home Section */
 .page-one {
-    background-color: cadetblue;
+    background-color: var(--light);
     margin-top: 2rem;
+    border-radius: .5rem;
+    padding: 2rem;
 }
 
 #home {
@@ -88,8 +112,10 @@ p {
 
 /* Page Two, About Section */
 .page-two {
-    background-color: aquamarine;
+    background-color: var(--light);
     margin-top: 2rem;
+    border-radius: .5rem;
+    padding: 2rem;
 }
 
 #about {
@@ -103,8 +129,10 @@ p {
 
 /* Page Three, Portfolio Section */
 .page-three {
-    background-color: lightgreen;
+    background-color: var(--light);
     margin-top: 2rem;
+    border-radius: .5rem;
+    padding: 2rem;
 }
 
 #portfolio {
@@ -118,8 +146,10 @@ p {
 
 /* Page Four, Contact Section */
 .page-four {
-    background-color: palevioletred;
+    background-color: var(--light);
     margin-top: 2rem;
+    border-radius: .5rem;
+    padding: 2rem;
 }
 
 #contact {
@@ -135,6 +165,8 @@ footer {
     font-size: 2rem;
     margin-top: 2rem;
     bottom: 0;
+    border-radius: .5rem .5rem 0 0;
+    padding: 2rem;
 }
 
 /* Media Queries Section */
