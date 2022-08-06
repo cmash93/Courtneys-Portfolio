@@ -7,6 +7,7 @@ html {
     font-size: 62.5%;
     display: flex;
     justify-content: center;
+    scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -54,12 +55,13 @@ nav {
     display: flex;
     justify-content: space-between;
     top: 0;
-    border-radius: .5rem;
+    border-radius: .5rem .5rem 0 0;
     margin-top: 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 3rem;
     padding-right: 3rem;
+    border-bottom: .1rem solid #d179cd;
 }
 
 /* This allows me to change the color based on hover and what page we are on */
@@ -87,7 +89,7 @@ p {
     font-size: 1.6rem;
 }
 
-img {
+img.background {
     height: 5rem;
     width: 5rem;
 }
@@ -95,17 +97,27 @@ img {
 
 /* Page One, Home Section */
 .page-one {
+    display: grid;
     background-color: var(--light);
-    margin-top: 2rem;
+    margin-top: 1rem;
     border-radius: .5rem;
-    padding: 2rem;
+    padding: 8rem;
+}
+
+img.hello-pic {
+    height: 46.3rem;
+    width: 61.7rem;
+    float: right;
+    margin-left: 2.5rem;
 }
 
 #home {
-
+    float: left;
+    margin-right: 2.5rem;
 }
 
 #home h2.greeting {
+    margin-top: 10rem;
 
 }
 
