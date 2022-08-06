@@ -34,6 +34,10 @@ h2 {
     font-size: 3rem;
 }
 
+h3 {
+    font-size: 2rem;
+}
+
 h1,
 h2 {
     
@@ -55,13 +59,15 @@ nav {
     display: flex;
     justify-content: space-between;
     top: 0;
-    border-radius: .5rem .5rem 0 0;
+    border-radius: .5rem;
     margin-top: 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 3rem;
     padding-right: 3rem;
-    border-bottom: .1rem solid #d179cd;
+    border-bottom: .2rem solid #d179cd;
+    z-index: 1;
+    
 }
 
 /* This allows me to change the color based on hover and what page we are on */
@@ -89,11 +95,15 @@ p {
     font-size: 1.6rem;
 }
 
-img.background {
+img.logo {
     height: 5rem;
     width: 5rem;
 }
 
+/* might delete this late...check back */
+main {
+
+}
 
 /* Page One, Home Section */
 .page-one {
@@ -105,10 +115,12 @@ img.background {
 }
 
 img.hello-pic {
-    height: 46.3rem;
-    width: 61.7rem;
+    width: 100%;
+    max-width: 61rem;
+    height: auto;
     float: right;
     margin-left: 2.5rem;
+    outline: .2rem solid #d179cd;
 }
 
 #home {
@@ -117,7 +129,7 @@ img.hello-pic {
 }
 
 #home h2.greeting {
-    margin-top: 10rem;
+    margin-top: 12rem;
 
 }
 
@@ -130,12 +142,13 @@ img.hello-pic {
     padding: 2rem;
 }
 
-#about {
 
+#about {
+    
 }
 
 #about h2.bio-elements {
-
+    
 }
 
 
@@ -145,14 +158,83 @@ img.hello-pic {
     margin-top: 2rem;
     border-radius: .5rem;
     padding: 2rem;
+    
+}
+
+img.github {
+    width: 100%;
+    max-width: 100rem;
+    height: auto;
+    outline: .2rem solid #d179cd;
+}
+
+img.placeholder-one {
+    width: 100%;
+    max-width: 50rem;
+    max-height: 28.1rem;
+    height: auto;
+    outline: .2rem solid #d179cd;
+    object-fit: cover;
+}
+
+img.placeholder-two {
+    width: 100%;
+    max-width: 50rem;
+    height: auto;
+    outline: .2rem solid #d179cd;
+    transform: scaleX(-1);
 }
 
 #portfolio {
+    position: relative;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
 
+#portfolio a {
+    
+}
+
+#portfolio a:hover {
+    
+}
+
+#portfolio .github-text {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 7.4%;
+    width: 20%;
+    line-height: 2;
+    background-color: rgb(255, 255, 255, .8);
+    border: .2rem solid #d179cd;
+}
+
+#portfolio .placeholder-text-one {
+    position: absolute;
+    text-align: center;
+    top: 87%;
+    left: 7.4%;
+    width: 20%;
+    line-height: 2;
+    background-color: rgb(255, 255, 255, .8);
+    border: .2rem solid #d179cd;
+}
+
+#portfolio .placeholder-text-two {
+    position: absolute;
+    text-align: center;
+    top: 87%;
+    left: 50%;
+    width: 20%;
+    line-height: 2;
+    background-color: rgb(255, 255, 255, .8);
+    border: .2rem solid #d179cd;
 }
 
 #portfolio h2.portfolio-elements {
-
+    text-align: left;
 }
 
 
