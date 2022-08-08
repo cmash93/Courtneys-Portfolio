@@ -190,11 +190,13 @@ img.hello-pic {
 
 #portfolio a {
     -webkit-filter: brightness(100%);
+    filter: brightness(100%);
     transition: all 1s ease;
 }
 
 #portfolio a:hover {
     -webkit-filter:brightness(50%);
+    filter: brightness(50%);
 }
 
 #portfolio h3 {
