@@ -42,12 +42,6 @@ h3 {
     font-size: 2rem;
 }
 
-h1,
-h2 {
-    
-}
-
-
 /* Properties applied to the Header and Footer */
 nav,
 footer {
@@ -104,10 +98,13 @@ img.logo {
     width: 5rem;
 }
 
-/* might delete this late...check back */
-main {
-
+#home-link,
+#about-link,
+#port-link,
+#contact-link {
+    visibility: hidden;
 }
+
 
 /* Page One, Home Section */
 #page-one {
