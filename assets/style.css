@@ -170,7 +170,9 @@ img.hello-pic {
 }
 
 .info {
-    
+    padding: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
 }
 
 
