@@ -109,7 +109,7 @@ img.logo {
 /* Page One, Home Section */
 #page-one {
     background-color: rgba(255, 255, 255, 0.5);
-    margin-top: 1rem;
+    margin-top: -1rem;
     border-radius: .5rem;
     padding-top: 8rem;
     padding-bottom: 8rem;
@@ -124,7 +124,7 @@ img.hello-pic {
     margin-right: 1rem;
     margin-left: 10%;
     outline: .3rem solid #fff;
-    border-radius: .5rem;
+    border-radius: 5rem;
 }
 
 #home {
@@ -157,8 +157,22 @@ img.hello-pic {
 }
 
 #about {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -1.2rem;
+    margin-right: -1.2rem;
     padding: 3rem;
 }
+
+#justify-content {
+    justify-content: center;
+}
+
+.info {
+    
+}
+
 
 
 
@@ -265,7 +279,62 @@ img.hello-pic {
 }
 
 #contact {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 3rem;
+}
+
+form {
+    margin: 0 auto;
+    width: 50rem;
+    padding: 1rem;
+    border: .3rem solid #fff;
+    border-radius: 2rem;
+}
+  
+label {
+    display: inline-block;
+    width: 10rem;
+    font-size: 1.6rem;
+}
+    
+input, 
+textarea {
+    box-sizing: border-box;
+    width: 30rem;
+    border: 1px solid #935d9b;
+}
+  
+textarea {
+    vertical-align: top;
+    height: 6rem;
+}
+    
+button {
+    height: 4rem;
+    width: 12rem;
+    background-color: #935d9b;
+    color: #FDF8F5;
+}
+
+.label-text {
+    text-align: right;
+}
+
+.submit-button {
+    text-align: center;
+}
+
+.contact-directly {
+    margin-top: 3rem;
+    font-size: 2rem;
+}
+
+.contact-directly ul li {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
 }
 
 
