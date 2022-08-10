@@ -12,6 +12,7 @@ html {
     display: flex;
     justify-content: center;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 .wrapper {
@@ -71,10 +72,17 @@ nav {
 nav:hover li a {
     opacity: 0.5; 
 }
+
 nav:hover li a:hover {
       opacity: 1; 
     
 }
+
+nav li a:active {
+    color: #fff;
+  
+}
+
 
 li {
     display: inline-block;
@@ -98,12 +106,6 @@ img.logo {
     width: 5rem;
 }
 
-#home-link,
-#about-link,
-#port-link,
-#contact-link {
-    visibility: hidden;
-}
 
 
 /* Page One, Home Section */
@@ -116,6 +118,12 @@ img.logo {
     border: .3rem solid #fff;
 }
 
+#home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem
+}
 
 img.hello-pic {
     width: 50%;
@@ -127,12 +135,6 @@ img.hello-pic {
     border-radius: 5rem;
 }
 
-#home {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3rem
-}
 
 .text-wrapper {
     width: 50%;
@@ -329,12 +331,19 @@ button {
 .contact-directly {
     margin-top: 3rem;
     font-size: 2rem;
+    text-align: center;
 }
+
+.contact-directly ul {
+    padding: 3rem;
+}
+
 
 .contact-directly ul li {
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
+    margin: 1rem;
 }
 
 
@@ -350,3 +359,78 @@ footer {
 }
 
 /* Media Queries Section */
+@media screen and (max-width: 540px) {
+    nav,
+    ul,
+    li {
+        display: flex;
+        flex-direction:column;
+        text-align: center;
+    }
+    #page-one,
+    #page-two,
+    #page-three,
+    #page-four {
+        padding: 3rem;
+        scroll-margin-top: 15rem;
+    }
+
+
+    #home,
+    #about,
+    #portfolio,
+    #content {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .logo {
+        display: none;
+    }
+    #portfolio h3 {
+        line-height: 1;
+    }
+
+    .gallery-link-one h3 {
+        width: 35%;
+    }
+
+    form {
+        width: 30rem;
+    }
+    
+    input,
+    textarea {
+        width: 28rem;
+    }
+    
+    .label-text {
+        text-align: left;
+    }
+
+}
+    
+@media screen and (max-width: 426px) {
+    
+    #page-one,
+    #page-two,
+    #page-three,
+    #page-four,
+    #home,
+    #about,
+    #portfolio,
+    #content {
+      padding: .5rem;
+      padding-top: 2rem;
+      
+    }
+    form,
+    .contact-directly p {
+        display: none;
+    }
+     .contact-directly ul {
+        padding: 0;
+        margin-top: -2rem;
+     }
+}
