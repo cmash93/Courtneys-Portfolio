@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Style and Font References -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,11 +16,10 @@
 <div class="wrapper">
 
 <body>
-    
- 
-        <!-- Navigation -->
+   
+    <!-- Navigation as Header -->
     <nav>
-       <img src="./assets/images/logo.png" class="logo" alt="multi-colored 'C' logo">
+    <img src="./assets/images/logo.png" class="logo" alt="multi-colored 'C' logo">
         <ul>
             <li><a href="#page-one">home</a></li>
             <li><a href="#page-two">about</a></li>
@@ -28,92 +28,95 @@
         </ul>
     </nav>
 
+
+    <!-- Main Content -->
     <main>
-   
 
-    <div id="page-one">
-        <section id="home">
-            <img src="./assets/images/profile.jpg" alt="Courtney in home office with purple background" class="hello-pic">
-            <div class="text-wrapper">
-                <h2>courtney ashley farzam</h2>
-                <p>web development | graphic design </p>
-            </div>
-        </section>
-    </div>
-
-
-    <div id="page-two">
-        <h2>about me</h2>
-        <section id="about justify-content">
-            <figure class="info">
-                <h3>education</h3>
-                    <p>I graduated from Rhodes College in Memphis, TN with a B.A. in Music. I've since decided to change career paths and dive into the world of web development. I've always considered music to be its own language, and I'm excited to now learn the languages involved in web development!</p>
-            </figure>
-            <figure class="info">
-                <h3>location</h3>
-                    <p>I'm a Memphis native who now resides in Nashville, TN. My future plans consist of traveling around the country to learn more about what lies outside of Tennessee.</p>
-            </figure>
-            <figure class="info">
-                <h3>experience</h3>
-                    <p>TBD</p>
-            </figure>
-        </section>
-    </div>
-
-    
-    <div id="page-three">
-        <h2>my work</h2>
-        <section id="portfolio">
-
-                <a href="https://github.com/cmash93" target="blank" class="gallery-link-one" alt="abstract photo of multicolored coding">
-                    <h3>GitHub</h3>
-                </a>
-                <a href="#" target="blank" class="gallery-link-two" alt="multicolored image of computer themed logos">
-                    <h3>TBD</h3>
-                </a>
-                <a href="#" target="blank" class="gallery-link-three" alt="blue and purple image of email icons">
-                    <h3>TBD</h3>
-                </a>
-            </section>       
+        <!-- Home Section -->
+        <div id="page-one">
+            <section id="home">
+                <img src="./assets/images/profile.jpg" alt="Courtney in home office with purple background" class="hello-pic">
+                <div class="text-wrapper">
+                    <h2>courtney ashley farzam</h2>
+                    <p>web development | graphic design </p>
+                </div>
+            </section>
         </div>
 
+        <!-- About Section -->
+        <div id="page-two">
+            <h2>about me</h2>
+            <section id="about justify-content">
+                <figure class="info">
+                    <h3>education</h3>
+                        <p>I graduated from Rhodes College in Memphis, TN with a B.A. in Music. I've since decided to change career paths and dive into the world of web development. I've always considered music to be its own language, and I'm excited to now learn the languages involved in web development!</p>
+                </figure>
+                <figure class="info">
+                    <h3>location</h3>
+                        <p>I'm a Memphis native who now resides in Nashville, TN. My future plans consist of traveling around the country to learn more about what lies outside of Tennessee.</p>
+                </figure>
+                <figure class="info">
+                    <h3>experience</h3>
+                        <p>TBD</p>
+                </figure>
+            </section>
+        </div>
 
-    <div id="page-four">
-        <h2>contact me</h2>
-        <section id="contact">
-            <form>
+        <!-- Portfolio Section -->
+        <div id="page-three">
+            <h2>my work</h2>
+            <section id="portfolio">
+
+                    <a href="https://github.com/cmash93" target="blank" class="gallery-link-one" alt="abstract photo of multicolored coding">
+                        <h3>GitHub</h3>
+                    </a>
+                    <a href="#" target="blank" class="gallery-link-two" alt="multicolored image of computer themed logos">
+                        <h3>TBD</h3>
+                    </a>
+                    <a href="#" target="blank" class="gallery-link-three" alt="blue and purple image of email icons">
+                        <h3>TBD</h3>
+                    </a>
+                </section>       
+            </div>
+
+        <!-- Contact Section -->
+        <div id="page-four">
+            <h2>contact me</h2>
+            <section id="contact">
+                <form>
+                    <ul>
+                    <li>
+                        <label class="label-text">Name:</label>
+                        <input type="text" id="name" name="user-name">
+                    </li>
+                    <li>
+                        <label class="label-text">Email:</label>
+                        <input type="text" id="email" name="user-email">
+                    </li>
+                    </ul>
+                    <div class="submit-button">
+                    <button type="submit">SEND</button>
+                    </div>
+                </form>    
+                <div class="contact-directly">
+                <p>Please feel free to submit a contact request or contact me directly via phone or email!</p>
                 <ul>
-                  <li>
-                    <label class="label-text">Name:</label>
-                    <input type="text" id="name" name="user-name">
-                  </li>
-                  <li>
-                    <label class="label-text">Email:</label>
-                    <input type="text" id="email" name="user-email">
-                  </li>
+                    <li>Email: 
+                    <li>cmash93@gmail.com</li>
+                    <li>Phone:</li>
+                    <li>(901)-828-6435</li>
                 </ul>
-                <div class="submit-button">
-                  <button type="submit">SEND</button>
                 </div>
-              </form>    
-              <div class="contact-directly">
-              <p>Please feel free to submit a contact request or contact me directly via phone or email!</p>
-              <ul>
-                <li>Email: 
-                <li>cmash93@gmail.com</li>
-                <li>Phone:</li>
-                <li>(901)-828-6435</li>
-              </ul>
-              </div>
-        </section>
-    </div>
+            </section>
+        </div>
 
     </main>
 
 </body>
 
+<!-- Footer -->
 <footer>
-    Made with love and CSS
+    made with 💕 and CSS
 </footer>
 
 </div>
