@@ -332,8 +332,8 @@ img.hello-pic {
     margin-top: 2rem;
     border-radius: .5rem;
     padding: 2rem;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: 9rem;
+    padding-bottom: 6rem;
     border: .3rem solid #fff;
 }
 
@@ -398,22 +398,19 @@ button {
 }
 
 .contact-directly {
-    margin-top: 3rem;
+    margin-top: 5rem;
     font-size: 2rem;
     text-align: center;
 }
 
 .contact-directly ul {
     padding: 3rem;
-}
-
-/* Removed bullets from list
-   ------------------------- */
-.contact-directly ul li {
     display: flex;
     justify-content: space-evenly;
-    list-style-type: none;
-    margin: 1rem;
+}
+
+.contact-directly a {
+    font-size: 3rem;
 }
 
 
