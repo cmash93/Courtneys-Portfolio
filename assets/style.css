@@ -246,7 +246,7 @@ img.hello-pic {
    ------------------------------------------------------------------------- */
 #portfolio {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(5, 5vw);
     grid-gap: 1.5rem;
     padding: 3rem;
@@ -279,34 +279,37 @@ img.hello-pic {
     width: 100%;
     height: 100%;
     outline: .3rem solid #fff;
-    grid-column: 1 / 6;
+    grid-column: 2 / 6;
     grid-row: 1 / 4;
-    background-image: url(../assets/images/coding.jpg);
+    background-image: url(../assets/images/weatherapp.gif);
+    background-size: cover;
 }
 
 .gallery-link-two {
     width: 100%;
     height: 100%;
     outline: .3rem solid #fff;
-    grid-column: 1 / 3;
+    grid-column: 2 / 4;
     grid-row: 4 / 6;
-    background-image: url(../assets/images/placeholder1.jpg);
+    background-image: url(../assets/images/Randamu1.png);
+    background-size: cover;
 }
 
 .gallery-link-three {
     width: 100%;
     height: 100%;
     outline: .3rem solid #fff;
-    grid-column: 3 / 6;
+    grid-column: 4 / 6;
     grid-row: 4 / 6;
-    background-image: url(../assets/images/placeholder3.jpg);
+    background-image: url(../assets/images/JavaScriptQuiz.png);
+    background-size: cover;
 }
 
 /* Where the label is positioned on each image
    ------------------------------------------- */
 .gallery-link-one h3 {
     width: 20%;
-    margin-top: 15%;
+    margin-top: 10%;
 }
 
 .gallery-link-two h3 {
@@ -316,7 +319,7 @@ img.hello-pic {
 
 .gallery-link-three h3 {
    width: 30%;
-   margin-top: 13%;
+   margin-top: 20%;
 }
 
 
